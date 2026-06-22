@@ -1,73 +1,202 @@
-# Welcome to your Lovable project
+🤖 AI Resume Analyzer
+📖 Overview
 
-## Project info
+AI Resume Analyzer is an intelligent web application that helps job seekers evaluate and improve their resumes using Artificial Intelligence. The system analyzes resume content, extracts key information, compares skills with job requirements, calculates an ATS (Applicant Tracking System) score, and provides personalized recommendations to increase the chances of getting shortlisted.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This project leverages AI and NLP techniques to automate resume screening and help candidates optimize their resumes for better career opportunities.
 
-## How can I edit this code?
+🎯 Objectives
+Analyze resumes automatically using AI
+Calculate ATS compatibility scores
+Extract skills, education, and experience
+Match resumes with job descriptions
+Provide improvement suggestions
+Help candidates increase interview opportunities
+✨ Features
+📄 Resume Upload (PDF/DOCX)
+🤖 AI-Powered Resume Analysis
+🎯 ATS Score Calculation
+🧠 Skill Extraction
+📊 Resume Strength Analysis
+📌 Job Description Matching
+🔍 Missing Skill Detection
+💡 Resume Improvement Suggestions
+📈 Performance Dashboard
+📱 Responsive Design
+🏗️ Tech Stack
+Frontend
+React.js
+Tailwind CSS
+JavaScript
+Axios
+Backend
+Node.js
+Express.js
+AI & NLP
+Python
+NLP (Natural Language Processing)
+spaCy
+NLTK
+Scikit-Learn
+Database
+MongoDB
+Deployment
+Vercel
+Render / Railway
+🏛️ System Architecture
+User
+ │
+ ▼
+Resume Upload
+ │
+ ▼
+React Frontend
+ │
+ ▼
+Node.js Backend
+ │
+ ▼
+Python NLP Engine
+ │
+ ▼
+Resume Analysis
+ │
+ ├── ATS Score
+ ├── Skill Extraction
+ ├── Keyword Matching
+ └── Suggestions
+ │
+ ▼
+MongoDB Database
+ │
+ ▼
+Dashboard Results
+📂 Project Structure
+ai-resume-analyzer/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middleware/
+│   └── server.js
+│
+├── ai_engine/
+│   ├── analyzer.py
+│   ├── models/
+│   └── requirements.txt
+│
+├── uploads/
+├── README.md
+└── .env
+⚙️ Installation
+Clone Repository
+git clone https://github.com/your-username/ai-resume-analyzer.git
 
-There are several ways of editing your application.
+cd ai-resume-analyzer
+Backend Setup
+cd backend
 
-**Use Lovable**
+npm install
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+npm start
+Frontend Setup
+cd frontend
 
-Changes made via Lovable will be committed automatically to this repo.
+npm install
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
+AI Engine Setup
+cd ai_engine
 
-**Edit a file directly in GitHub**
+pip install -r requirements.txt
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+python analyzer.py
+🔑 Environment Variables
 
-**Use GitHub Codespaces**
+Create a .env file:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+PORT=5000
 
-## What technologies are used for this project?
+MONGO_URI=your_mongodb_connection_string
 
-This project is built with:
+JWT_SECRET=your_secret_key
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+PYTHON_SERVICE_URL=http://localhost:8000
+🤖 AI Analysis Workflow
+User uploads resume.
+System extracts text from PDF/DOCX.
+NLP engine processes resume content.
+Skills, education, and experience are identified.
+Resume is compared with job description.
+ATS score is calculated.
+Missing keywords are detected.
+Improvement suggestions are generated.
+Results are displayed on the dashboard.
+📊 Dashboard Features
+Resume Analysis
+ATS Score
+Resume Rating
+Keyword Analysis
+Resume Completeness
+Skill Analysis
+Technical Skills
+Soft Skills
+Missing Skills
+Skill Match Percentage
+Job Matching
+Job Description Comparison
+Match Score
+Missing Keywords
+Improvement Recommendations
+🔒 Security Features
+JWT Authentication
+Secure File Upload
+Input Validation
+Protected API Routes
+Encrypted User Data
+📈 Sample ATS Score Parameters
+Parameter	Weight
+Skills Match	35%
+Experience	25%
+Education	15%
+Keywords	15%
+Resume Structure	10%
+🚀 Future Enhancements
+Multi-Language Resume Analysis
+AI Resume Builder
+Cover Letter Generator
+LinkedIn Profile Analyzer
+Interview Question Generator
+AI Career Recommendation System
+Job Portal Integration
+Resume Ranking System
+🎓 Academic Relevance
 
-## How can I deploy this project?
+This project demonstrates concepts in:
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Artificial Intelligence
+Natural Language Processing (NLP)
+Machine Learning
+Information Extraction
+Full Stack Development
+Data Analysis
+👨‍💻 Developer
 
-## Can I connect a custom domain to my Lovable project?
+Harish Venugopal
+B.Tech Artificial Intelligence & Data Science
 
-Yes, you can!
+Connect With Me
+GitHub: https://github.com/harishvenugopal
+LinkedIn: https://www.linkedin.com/in/harish-venugopal-4a06b1272
+⭐ Support
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+If you found this project useful, consider giving it a ⭐ on GitHub.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+🤖 AI Resume Analyzer
+
+"Transforming Resumes into Interview Opportunities with AI." 🚀
